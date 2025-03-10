@@ -1,3 +1,5 @@
+# Dockerfile for Python Dev Workstation Container
+
 FROM python:3.13
 
 WORKDIR /setup
