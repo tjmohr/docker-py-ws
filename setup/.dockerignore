@@ -1,0 +1,72 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Docker files (optional, but helps prevent recursion issues)
+docker-compose.override.yml
+
+# Log files
+*.log
+
+###
+
+# Docker-specific files
+docker-compose.override.yml
+container-starship.toml
+
+# Version control (in case there are any in this directory)
+.git
+.gitignore
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Any temporary files
+*.tmp
+*.temp
+*.bak
+
+# Log files
+*.log
+
+# We don't need to include workspace directory in the build
+../workspace/
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+---
+services:
+  dev:
+    image: py-ws:3.13
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: py-ws
+    volumes:
+      - ../workspace:/workspace
+      - ~/.ssh:/root/.ssh:ro  # Optional: Mount SSH keys
+      - ./starship.toml:/root/.config/starship.toml  # Mount your custom Starship config
+    tty: true
+    stdin_open: true
+    restart: unless-stopped

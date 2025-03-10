@@ -1,0 +1,57 @@
+.vscode
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Docker
+docker-compose.override.yml
+container-starship.toml
+.env
+
+# IDE/Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Project specific
+*.log
+logs/

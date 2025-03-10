@@ -1,0 +1,9 @@
+netmiko
+ansible
+requests
+napalm
+nornir
+textfsm
+ntc-templates
+pynetbox
+fireREST
