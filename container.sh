@@ -124,6 +124,9 @@ container_status() {
 container_shell() {
     echo "Opening shell in container ${CONTAINER_NAME}..."
     cd ./setup
+    # First, run a command to ensure SSH agent is running and keys are loaded
+    docker compose exec dev bash -c 'eval "$(ssh-agent -s)"'
+    # Then open the shell
     docker compose exec dev zsh || {
         echo "Failed to open shell. Is the container running?"
         echo "Try starting it with: $0 start $USERNAME"

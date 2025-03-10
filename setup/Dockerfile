@@ -40,6 +40,9 @@ ENV SHELL=/bin/zsh
 # Add Starship to ZSH
 RUN echo 'eval "$(starship init zsh)"' >> /root/.zshrc
 
+# Add SSH agent startup to .zshrc
+RUN echo 'eval "$(ssh-agent -s)" > /dev/null' >> /root/.zshrc
+
 # Create work directory
 WORKDIR /workspace
 
