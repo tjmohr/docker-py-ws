@@ -1,7 +1,7 @@
 # Bold container-specific starship configuration
 format = """
-[🐳](fg:black bold) \
-[CONTAINER](bg:bright-cyan fg:black bold) \
+[](bg:#000080)[ 🐳 ](bg:#000080 fg:black bold)\
+[ PY-WS CONTAINER ](bg:#FF8C00 fg:black bold)\
 $directory\
 $git_branch\
 $git_status\
@@ -29,7 +29,7 @@ format = "[ $all_status$ahead_behind ]($style)"
 style = "bg:purple fg:bright-white bold"
 
 [python]
-format = "[ ${symbol}v${version} ]($style)"
+format = "[ ${symbol}${version} ]($style)"
 style = "bg:green fg:black bold"
 
 [fill]
