@@ -136,7 +136,7 @@ If you encounter issues with Python package installation:
 
 ## License
 
-This project is proprietary and not licensed for public use.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
