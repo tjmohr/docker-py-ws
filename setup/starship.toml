@@ -7,7 +7,8 @@ $git_branch\
 $git_status\
 $python\
 $fill\
-$character"""
+$character
+"""
 
 [directory]
 style = "bg:blue fg:bright-white bold"
@@ -16,8 +17,8 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
+success_symbol = "\n[➜](bold green) "
+error_symbol = "\n[✗](bold red) "
 
 [git_branch]
 format = "[ $symbol$branch ]($style)"
